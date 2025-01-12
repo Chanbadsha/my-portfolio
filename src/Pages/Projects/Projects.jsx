@@ -13,9 +13,10 @@ const projects = [
       "MongoDB",
       "Firebase",
     ],
-    image: "https://i.ibb.co.com/GJYLHhq/image.png", // Replace with the actual project image link
-    liveLink: "https://gloabal-gate-a10.web.app", // Replace with the live link of GlobalGate
-    githubLink: "https://github.com/username/globalgate", // Replace with the GitHub repository link
+    image: "https://i.ibb.co.com/GJYLHhq/image.png",
+    liveLink: "https://gloabal-gate-a10.web.app",
+    githubLink: "https://github.com/Chanbadsha/GlobalGate",
+    githubServerLink: "https://github.com/Chanbadsha/GlobalGate-Server",
   },
   {
     title: "Bongo Learn",
@@ -28,9 +29,10 @@ const projects = [
       "MongoDB",
       "Firebase",
     ],
-    image: "https://i.ibb.co.com/cyd00Cz/image.png", // Replace with a relevant project image link
+    image: "https://i.ibb.co.com/cyd00Cz/image.png",
     liveLink: "https://bongo-learn-63c73.web.app",
-    githubLink: "https://github.com/username/bongo-learn",
+    githubLink: "https://github.com/Chanbadsha/Bongo-Learn",
+    // githubServerLink: "https://github.com/Chanbadsha/GlobalGate-Server",
   },
   {
     title: "Legacy Library",
@@ -43,9 +45,10 @@ const projects = [
       "MongoDB",
       "Firebase",
     ],
-    image: "https://i.ibb.co.com/c1SX1fW/image.png", // Replace with project image link
+    image: "https://i.ibb.co.com/c1SX1fW/image.png",
     liveLink: "https://legacylibrary-906c1.web.app",
-    githubLink: "https://github.com/username/legacy-library",
+    githubLink: "https://github.com/Chanbadsha/Legacy-Library",
+    githubServerLink: "https://github.com/Chanbadsha/Legacy_library_server",
   },
 ];
 
@@ -111,14 +114,22 @@ const Projects = () => {
                   >
                     Live Site <FaExternalLinkAlt className="ml-1" />
                   </a>
-                  <p
-                    //   href={project.githubLink}
-                    //   target="_blank"
-                    //   rel="noopener noreferrer"
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center text-white bg-gray-800 px-4 py-2 rounded-lg hover:bg-gray-900 text-sm"
                   >
                     GitHub <FaGithub className="ml-1" />
-                  </p>
+                  </a>
+                  <a
+                    href={project.githubServerLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center text-white bg-gray-800 px-4 py-2 rounded-lg hover:bg-gray-900 text-sm"
+                  >
+                    GitHub <FaGithub className="ml-1" />
+                  </a>
                 </div>
               </div>
             </div>

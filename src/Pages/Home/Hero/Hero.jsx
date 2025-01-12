@@ -39,7 +39,7 @@ const Hero = () => {
                 <span>
                   <FaDownload />
                 </span>{" "}
-                Download CV
+                My Resume
               </a>
 
               <div className="flex gap-2 justify-center items-center">
