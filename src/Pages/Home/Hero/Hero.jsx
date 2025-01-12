@@ -32,23 +32,38 @@ const Hero = () => {
               help businesses connect with their audience.
             </p>
             <div className="flex gap-6">
-              <button className="btn btn-outline btn-secondary">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1zbWQU6PiBJ3z_IafYdOymCSLEkHjwVCe"
+                className="btn btn-outline btn-secondary"
+              >
                 <span>
                   <FaDownload />
                 </span>{" "}
                 Download CV
-              </button>
+              </a>
+
               <div className="flex gap-2 justify-center items-center">
-                {" "}
-                <button className="btn btn-xs btn-outline rounded-full btn-secondary">
+                <a
+                  href="https://github.com/Chanbadsha"
+                  target="_blank"
+                  className="btn btn-xs btn-outline rounded-full btn-secondary"
+                >
                   <FaGithub />
-                </button>
-                <button className="btn btn-xs btn-outline rounded-full btn-secondary">
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/chan-badsha-bhuiyan-602658317/"
+                  target="_blank"
+                  className="btn btn-xs btn-outline rounded-full btn-secondary"
+                >
                   <FaLinkedin />
-                </button>
-                <button className="btn btn-xs btn-outline rounded-full btn-secondary">
+                </a>
+                <a
+                  href="https://www.facebook.com/ChanBadshaBhuiyan2004"
+                  target="_blank"
+                  className="btn btn-xs btn-outline rounded-full btn-secondary"
+                >
                   <FaFacebook />
-                </button>
+                </a>
               </div>
             </div>
           </div>

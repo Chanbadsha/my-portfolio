@@ -3,12 +3,15 @@ import Hero from "../Hero/Hero";
 import About from "../../About/About";
 import Skills from "../../Skills/Skills";
 import Contact from "../../Contact/Contact";
+import Projects from "../../Projects/Projects";
 
 const Home = () => {
   return (
     <div>
       <Hero></Hero>
       <Skills />
+      <About></About>
+      <Projects></Projects>
       <Contact></Contact>
     </div>
   );

@@ -40,7 +40,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className=" bg-gradient-to-r from-gray-800 to-gray-900 text-white">
+    <div className=" fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-gray-800 to-gray-900 text-white">
       <Container>
         <div className="navbar">
           <div className="navbar-start">
