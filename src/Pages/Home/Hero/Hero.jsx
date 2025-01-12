@@ -11,7 +11,7 @@ import {
 } from "react-icons/fa";
 const Hero = () => {
   return (
-    <div className=" relative min-h-[600px]">
+    <div className=" relative pt-12 min-h-[600px]">
       <div
         style={{
           backgroundImage: `url(${bgImg})`,
@@ -31,9 +31,9 @@ const Hero = () => {
               and improving my skills to create clean, responsive designs that
               help businesses connect with their audience.
             </p>
-            <div className="flex gap-6">
+            <div className="flex flex-col md:flex-row gap-6">
               <a
-                href="https://drive.google.com/uc?export=download&id=1zbWQU6PiBJ3z_IafYdOymCSLEkHjwVCe"
+                href="https://drive.google.com/uc?export=download&id=1ltG6b1Emf28IaK7oJZNnoQ9CzD-K0iUK"
                 className="btn btn-outline btn-secondary"
               >
                 <span>
@@ -46,21 +46,21 @@ const Hero = () => {
                 <a
                   href="https://github.com/Chanbadsha"
                   target="_blank"
-                  className="btn btn-xs btn-outline rounded-full btn-secondary"
+                  className="btn  btn-outline rounded-full btn-secondary"
                 >
                   <FaGithub />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/chan-badsha-bhuiyan-602658317/"
                   target="_blank"
-                  className="btn btn-xs btn-outline rounded-full btn-secondary"
+                  className="btn  btn-outline rounded-full btn-secondary"
                 >
                   <FaLinkedin />
                 </a>
                 <a
                   href="https://www.facebook.com/ChanBadshaBhuiyan2004"
                   target="_blank"
-                  className="btn btn-xs btn-outline rounded-full btn-secondary"
+                  className="btn btn-outline rounded-full btn-secondary"
                 >
                   <FaFacebook />
                 </a>
