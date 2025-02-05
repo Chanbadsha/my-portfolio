@@ -7,6 +7,7 @@ import Projects from "../Pages/Projects/Projects";
 import Contact from "../Pages/Contact/Contact";
 import NotFoundPage from "../Components/NotFoundPage";
 import ScrollToTop from "../Components/ScrollToTop";
+import ProjectDetails from "../Pages/Projects/ProjectDetails";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "skills",
         element: <Skills></Skills>,
+      },
+      {
+        path: "detail/:id",
+        element: <ProjectDetails />,
       },
       {
         path: "projects",

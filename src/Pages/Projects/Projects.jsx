@@ -1,8 +1,10 @@
 import React from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const projects = [
   {
+    id: 1,
     title: "GlobalGate",
     description:
       "A comprehensive visa servicing platform offering application tracking, consultation booking, and up-to-date visa requirements for global destinations.",
@@ -19,6 +21,7 @@ const projects = [
     githubServerLink: "https://github.com/Chanbadsha/GlobalGate-Server",
   },
   {
+    id: 2,
     title: "Bongo Learn",
     description:
       "An interactive vocabulary learning platform designed to make language learning fun and engaging. Includes features like personalized word lists and progress tracking.",
@@ -35,6 +38,7 @@ const projects = [
     // githubServerLink: "https://github.com/Chanbadsha/GlobalGate-Server",
   },
   {
+    id: 3,
     title: "Legacy Library",
     description:
       "An online library platform that allows users to explore books, add to favorites, and manage a reading list.",
@@ -69,7 +73,7 @@ const Projects = () => {
         </div>
 
         {/* Projects Section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -105,16 +109,14 @@ const Projects = () => {
                     ))}
                   </ul>
                 </div>
-                <div className="flex items-center mt-4 space-x-4">
-                  <a
-                    href={project.liveLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center text-white bg-blue-500 px-4 py-2 rounded-lg hover:bg-blue-600 text-sm"
+                <div className="flex items-center mt-4 space-x-1 flex-wrap gap-3  xl:flex-nowrap justify-center">
+                  <Link
+                    to={`/detail/${project?.id}`}
+                    className="flex items-center text-white bg-blue-500 px-2 py-2 rounded-lg hover:bg-blue-600 text-sm"
                   >
-                    Live Site <FaExternalLinkAlt className="ml-1" />
-                  </a>
-                  <a
+                    View Details <FaExternalLinkAlt className="ml-1" />
+                  </Link>
+                  {/* <a
                     href={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -129,7 +131,7 @@ const Projects = () => {
                     className="flex items-center text-white bg-gray-800 px-4 py-2 rounded-lg hover:bg-gray-900 text-sm"
                   >
                     GitHub <FaGithub className="ml-1" />
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
