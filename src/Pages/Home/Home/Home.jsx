@@ -9,7 +9,6 @@ import ProjectDetails from "../../Projects/ProjectDetails";
 const Home = () => {
   return (
     <div>
-
       <Hero></Hero>
       <Skills />
       <About></About>
